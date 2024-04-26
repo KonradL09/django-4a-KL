@@ -1,0 +1,13 @@
+li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background: rgb(255, 255, 255) url("images/gory.jpg") no-repeat;
+    font-size: 60px;
+    text-align: center;
+    margin: 380px;
+}
