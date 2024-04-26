@@ -7,7 +7,8 @@ ul {
 }
 body {
     background: rgb(255, 255, 255) url("images/gory.jpg") no-repeat;
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
-    margin: 380px;
+    margin: 250px;
+    color: rgb(255, 255, 255);
 }
