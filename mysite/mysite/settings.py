@@ -27,7 +27,21 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+from . import mycecrets      
+ 
+DATABASES = {
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "4Adjango-zsl",
+        "USER": mycecrets.USER_NAME,
+        "PASSWORD": mycecrets.USER_PASS,
+        "HOST": "4Adjango-zsl.mssql.somee.com",
+        "PORT": "1433",
+        "SCHEMA": "master",
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server",
+        },
+    }
+}
 # Application definition
 
 INSTALLED_APPS = [
@@ -75,12 +89,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
